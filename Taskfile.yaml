@@ -1,0 +1,12 @@
+version: '3'
+tasks:
+  go:run:
+    cmds:
+      - cmd: go run cmd/api/main.go
+    sources:
+      - cmd/api/*.go
+  react:run:
+      cmds:
+      sources:
+      - 'app/*.tsx'
+      dir: cloudsec-admin
